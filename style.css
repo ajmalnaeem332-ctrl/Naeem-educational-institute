@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tial, sans-serif;ahoma, Ar
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
   color: var(--text-dark);
   background: var(--bg-soft);
   line-height: 1.6;
@@ -30,7 +30,6 @@ a:hover { text-decoration: underline; }
   padding: 0 20px;
 }
 
-/* Header */
 header.site-header {
   background: var(--bg-white);
   border-bottom: 1px solid var(--border-color);
@@ -53,8 +52,8 @@ header.site-header {
 
 .site-title span {
   display: block;
-  font-sizepx;
-  font-weight: 13: 400;
+  font-size: 13px;
+  font-weight: 400;
   color: var(--text-muted);
 }
 
@@ -72,10 +71,10 @@ nav.main-nav ul {
   margin: 0 auto;
 }
 
-nav.main-nav }
+nav.main-nav li { margin: 0; }
 
 nav.main-nav a {
-  display li { margin: 0;: block;
+  display: block;
   padding: 14px 18px;
   color: #ffffff;
   font-size: 14px;
@@ -86,7 +85,6 @@ nav.main-nav a:hover {
   text-decoration: none;
 }
 
-/* Hero */
 .hero {
   background: var(--brand-blue-light);
   padding: 50px 20px;
@@ -107,7 +105,6 @@ nav.main-nav a:hover {
   font-size: 15px;
 }
 
-/* Layout */
 .layout {
   display: flex;
   gap: 30px;
@@ -124,11 +121,11 @@ nav.main-nav a:hover {
 }
 
 .sidebar {
-  flex: 1 1 260 240px;
+  flex: 1 1 260px;
+  min-width: 240px;
 }
 
-.px;
-  min-width:card {
+.card {
   background: var(--bg-white);
   border: 1px solid var(--border-color);
   border-radius: 6px;
@@ -145,10 +142,10 @@ nav.main-nav a:hover {
   padding-bottom: 10px;
 }
 
-.post-list { list-style: none; margin: 0; padpost-list li {
-  padding: 14px 0;ding: 0; }
+.post-list { list-style: none; margin: 0; padding: 0; }
 
-.
+.post-list li {
+  padding: 14px 0;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -163,7 +160,6 @@ nav.main-nav a:hover {
 .sidebar-list li { padding: 10px 0; border-bottom: 1px solid var(--border-color); }
 .sidebar-list li:last-child { border-bottom: none; }
 
-/* Footer */
 footer.site-footer {
   background: var(--brand-blue-dark);
   color: #dbe4ee;
@@ -174,7 +170,6 @@ footer.site-footer {
 
 footer.site-footer a { color: #ffffff; margin: 0 8px; }
 
-/* Contact form */
 form.contact-form label {
   display: block;
   margin-bottom: 6px;
@@ -208,4 +203,4 @@ form.contact-form button:hover { background: var(--brand-blue-dark); }
 @media (max-width: 640px) {
   .top-bar { flex-direction: column; text-align: center; gap: 8px; }
   nav.main-nav ul { justify-content: center; }
-  }
+}
